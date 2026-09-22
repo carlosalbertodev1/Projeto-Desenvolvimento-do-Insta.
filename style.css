@@ -1,139 +1,144 @@
-* {
-    margin:0;
+#numero_seguidores{
+    font-weight: bold;
+    margin-left: 50px;
 }
-
 #conteudo{
-    width:800px;
-    height:1000px ;
-    background-color: rgb(255, 255, 255);
-    margin :0    auto;
+    width: 800px; 
+    height: 1000px;
+    background-color: white;  
+    margin: 0 auto; 
 }
 #cabecalho{
- width:800px;
- height:300px;
- background-color: rgb(255, 255, 255);
- display:flex;
-
-
+    width: 800px;
+    height: 300px;
+    background-color: red;
+    display: flex;
+}
+#link_1{
+    color: black;
 }
 #destaques{
-    background-color: brown;
-    width:800px;
-    height:90px;
-
-}
-#feed{
-    width:800px;
-    height:1000px;
-    background-color: blueviolet;
-
-}
-#fotodeperfil{
-    width:300px;
-    height:300px;
-
-    align-items:center;
-    justify-content: center;
-    display:flex;
+    height: 150px;
+    width: 800px;
+    background-color: blue;
+    display:flex ;
     
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space:nowrap; 
 }
-#textodeperfil {
-    width:500px;
-    height:300px;
-    background-color: rgb(255, 255, 255);
-    padding:20px 50px;
-    box-sizing: border-box;
+.destaque{
+    width: 120px;
+    height: 150px;
+    background-color: white;
+    padding: 10px;
 
+    img{
+        border-radius: 100%;
+    }
+    p{
+        margin-top: 0;
+        text-align: center;
+        font-weight: 600;
+    }  
 }
 
-#textodeperfil div {
-    background-color: red;
-    display:flex;
-    justify-content:center ;
+#feed {
+    height: 300px;
+    width: 800px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+    row-gap: 3px;
+    img{
+        width: 260px;
+        height: 300px;
+    }
 }
-.web{
-    background-color: rgb(255, 255, 255);
-    height:60px;
-    border-bottom:solid;
-    border-color: rgb(179, 179, 179);
-    border-width: 3px;
+
+#fotodeperfil{
+    width: 300px;
+    height: 300px;
+    background-color: white;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-
+    justify-content: center;
+    object-fit: contain;
+    img{
+        width: 280px;
+        height: 240px;
+    }
 }
-.entrar{
-    color:white;
-    background-color: rgba(0,0,255,0.568);
-    
-    right:150px;
-    top:15px;
-    border-radius: 8px;
-    border:none;
-    padding:8px;
-}
-.cadastrar{
-    color: rgba(0, 0, 255, 0.568);
-    
-    right: 35px;
-    top: 15px;
-    border:none;
-    border-radius: 8px;
-    padding:7px;
-}
-#perfil{
-    width: 200px;
-    height: 200px;  
+#fotoperfil{
     border-radius: 100%;
     
-    
-    
 }
-.textinho{
-    
-    top: 150px;
-    right:400px;
-}
-h2{
-    top:50px;
-    right:600px;}
-
-.seguidores{
-    top:100px;
-    right:600px;
-font-weight:bold;}
-
-.seguindo{
-    
-    top:100px;
-    right:450px
+#textodeperfil{
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    padding: 20px 50px;
+    box-sizing: border-box;
 }
 .juntinhos{
-    margin:0;
+    margin: 0%;
 }
 #pill{
-    background-color: rgba(156, 156, 156, 0.568);
-    border-radius:10px;
-    padding:auto;
-    width:105px;
-    margin:auto;
+    background-color: lightgray;
+    padding: 8px;
+    border-radius: 20px;
+    img{
+        vertical-align: middle;
+        /* position: relative;
+        top: 3px; */
+        /* margin-bottom: -3px; */
+    }
+}
+#essenao {
+    margin: 15px 0;
 }
 a{
-    color:rgb(12, 12, 12); 
+    color: black;
     text-decoration: none;
 }
-#pill img{ vertical-align:middle ;}
-
-#essenao{
-    margin:15px 0;
-}
-.foto {display:flex;
-    width:10px;
-}
-#icon{
-    height:12px;
-    width:12px;
-    display:inline-block;
+#icone-link {
+    height: 12px;
+    width: 12px;
+    display: inline-block;
     background-size: 12px;
-    background-image: url("iconsem.png");
+    background-image: url("download.png");
+}
+.destaques{
+    width:800px;
+    height: 150px;
+    background-color: aqua;
+    display: flex;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    
+    img{
+        width:120px;
+        height:150px;
+    }
+
+
+}
+.destaque{
+    width: 120px;
+    height: 150px;
+    background-color: aliceblue;
+    padding: 10px;
+
+    img {
+        border-radius: 100%;
+
+    }
+    p{
+        margin-top: 0;
+        text-align: center;
+    }
 }
